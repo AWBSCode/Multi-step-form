@@ -1,0 +1,173 @@
+.App, .progress .steps-container .step-container-idx .step-num-idx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+.progress {
+  width: 250px;
+  height: 100%;
+  position: relative;
+  background-color: hsl(243, 100%, 62%);
+  border-radius: 15px;
+  background-image: url("../images/bg-sidebar-desktop.svg");
+  background-position: bottom;
+}
+.progress .steps-container {
+  margin: 34px 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.progress .steps-container .step-container-idx {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+}
+.progress .steps-container .step-container-idx .step-num-idx {
+  width: 35px;
+  height: 35px;
+  border: 1px solid white;
+  border-radius: 50%;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+}
+.progress .steps-container .step-container-idx .active {
+  color: black;
+  background-color: white;
+}
+.progress .steps-container .step-container-idx span {
+  color: hsl(228, 100%, 84%);
+}
+.progress .steps-container .step-container-idx p {
+  font-weight: 500;
+}
+
+.form1 {
+  width: 100%;
+  position: relative;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.plan-box {
+  width: 170px;
+  height: 180px;
+  border: 1px solid hsl(206, 94%, 87%);
+  border-radius: 10px;
+  position: relative;
+}
+.plan-box:has([type=radio]:checked) {
+  background-color: hsl(206, 94%, 87%);
+  border-color: hsl(243, 100%, 62%);
+}
+.plan-box input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.plan-box input:checked .plan-box {
+  background-color: hsl(206, 94%, 87%);
+  border-color: hsl(243, 100%, 62%);
+}
+.plan-box .icon {
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 20px;
+}
+.plan-box .plan-txt {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.plan-box .plan-txt h2 {
+  color: hsl(213, 96%, 18%);
+}
+.plan-box .plan-txt p {
+  color: hsl(231, 11%, 63%);
+}
+
+.App {
+  background-color: hsl(229, 24%, 87%);
+  height: 100vh;
+  font-family: "Ubuntu", sans-serif;
+}
+.App .main {
+  position: relative;
+  width: 70%;
+  height: 500px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+.part {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+.part input {
+  padding: 10px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid hsl(229, 24%, 87%);
+  transition: 0.4s;
+}
+.part input:focus {
+  border-color: black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btn {
+  padding: 12px 25px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border: none;
+  border-radius: 7px;
+  background-color: hsl(213, 96%, 18%);
+  color: white;
+  cursor: pointer;
+  transition: 0.5s color;
+}
+.btn:hover {
+  background-color: hsl(243, 100%, 62%);
+}
+
+.heading p {
+  color: hsl(231, 11%, 63%);
+  padding-top: 10px;
+}
+
+.step-container-content {
+  position: relative;
+  padding: 35px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 80%;
+}/*# sourceMappingURL=Main.css.map */
